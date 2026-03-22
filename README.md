@@ -1,0 +1,3 @@
+## 🧮 Descrição do Aplicativo
+
+Este aplicativo em C# funciona como um **mini sistema de utilidades no console**, oferecendo um menu com várias funcionalidades: criar uma **lista de compras** e realizar **operações matemáticas** como adição, subtração, multiplicação e divisão. O usuário navega pelo menu, escolhe a operação desejada e o programa executa tudo de forma simples e interativa, exibindo os resultados diretamente na tela. Também inclui uma opção de **saída com animação**, tornando a experiência mais dinâmica.
