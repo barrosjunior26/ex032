@@ -87,6 +87,32 @@ namespace ex032
             return resultado;
         }
 
+        public static double Multiplicacao()
+        {
+            //Variáveis locais
+            byte quantidade;
+            double[] multiplicacao;
+            double resultado;
+
+            Console.Write("Informe a quantidade de valores que deseja ir multiplicando: ");
+            quantidade = Convert.ToByte(Console.ReadLine());
+
+            multiplicacao = new double[quantidade];
+
+            for (int i = 0; i < multiplicacao.Length; i++)
+            {
+                Console.Write($"Informe o {i + 1}º valor: ");
+                multiplicacao[i] = Convert.ToDouble(Console.ReadLine());
+            }
+
+            resultado = multiplicacao.Aggregate((mult1, mult2) => mult1 * mult2);
+
+            Console.WriteLine("\n\n========== Resultado do cálculo ==========\n");
+            Console.WriteLine($"O resultado do cálculo = {Math.Round(resultado, 2)}");
+
+            return resultado;
+        }
+
         public static double Divisao()
         {
             //Variáveis locais
