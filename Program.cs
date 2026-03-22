@@ -86,5 +86,23 @@ namespace ex032
 
             return resultado;
         }
+
+        public static double Divisao()
+        {
+            //Variáveis locais
+            double valor1, valor2, resultado;
+
+            Console.Write("Informe o dividendo: ");
+            valor1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Informe o divisor: ");
+            valor2 = Convert.ToDouble(Console.ReadLine());
+
+            resultado = valor1 / valor2;
+
+            Console.WriteLine("\n\n========== Resultado do cálculo ==========\n");
+            Console.WriteLine($"O resultado do cálculo = {Math.Round(resultado, 2)}");
+
+            return resultado;
+        }
     }
 }
