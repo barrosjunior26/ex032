@@ -60,5 +60,31 @@ namespace ex032
 
             return resultado;
         }
+
+        public static double Subtracao()
+        {
+            //Variáveis locais
+            byte quantidade;
+            double[] subtracao;
+            double resultado;
+
+            Console.Write("Informe a quantidade de valores que deseja ir subtraindo: ");
+            quantidade = Convert.ToByte(Console.ReadLine());
+
+            subtracao = new double[quantidade];
+
+            for (int i = 0; i < subtracao.Length; i++)
+            {
+                Console.Write($"Informe o {i + 1}º valor: ");
+                subtracao[i] = Convert.ToDouble(Console.ReadLine());
+            }
+
+            resultado = subtracao.Aggregate((valor1, valor2) => valor1 - valor2);
+
+            Console.WriteLine("\n\n========== Resultado do cálculo ==========\n");
+            Console.WriteLine($"O resultado do cálculo = {Math.Round(resultado, 2)}");
+
+            return resultado;
+        }
     }
 }
